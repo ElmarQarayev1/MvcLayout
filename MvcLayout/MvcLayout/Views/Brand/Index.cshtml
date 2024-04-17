@@ -1,0 +1,13 @@
+﻿
+@{
+    List<Brand> brands = ViewBag.Brands;
+}
+<h3>
+    Brands:
+</h3>
+<ul>
+    @foreach (var item in brands)
+    {
+        <li><a>@item.Name - <span style="color:@(item.Count<10?"red":"orange")">@item.Count</span></a></li>
+    }
+</ul>

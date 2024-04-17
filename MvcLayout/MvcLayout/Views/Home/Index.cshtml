@@ -1,0 +1,21 @@
+﻿@*@{
+    List<Product> products = ViewBag.Products;
+    List<Brand> brands = ViewBag.Brands;
+}
+
+<h1>Products:</h1>
+<ul>
+    @foreach (var product in products)
+    {
+        <li>@product.Name</li>
+    }
+</ul>
+
+<h1>Brands:</h1>
+<ul>
+    @foreach (var brand in brands)
+    {
+        <li>@brand.Name</li>
+    }
+</ul>*@
+<h1>home page</h1>

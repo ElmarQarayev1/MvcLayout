@@ -1,0 +1,14 @@
+﻿
+@{
+    List<Product> products = ViewBag.Products;
+}
+    <h3>
+        Products:
+    </h3>
+    <ul>
+        @foreach (var item in products)
+        {
+            <li><a asp-action="details" asp-route-id="@item.Id">@item.Name - <span style="color:@(item.Price<100?"red":"orange")">@item.Price</span></a></li>
+        }
+    </ul>
+   
